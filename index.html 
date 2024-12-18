@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="updated_style.css">
+    <title>AquaPure</title>
+</head>
+<body>
+    <div class="background"></div>
+</body>
+</html> 
+
+ <div class="nav">
+    <div class="logo">
+        <img src="https://i.postimg.cc/X7CfGrCc/IMG-5331-removebg-preview.png" alt="AquaPure Logo">
+        <span class="website-name">AquaPure Solutions</span>
+    </div>
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about-us">About Us</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+</div> 
+
+    <!-- Homepage Section -->
+    <section id="home" class="homepage">
+        <h1>Transforming Lives, One Drop at a Time</h1>
+        <p>At AquaPure Solutions, our mission is to transform lives by providing sustainable, innovative, and accessible clean water solutions to communities in need.</p>
+        <a href="#about-us" class="about-us-button" style="color: white; border: 1px solid white; padding: 10px 20px; text-decoration: none; background-color: transparent; border-radius: 5px;">About Us</a>
+    </section>
+
+   
+<!-- Our Priorities Section -->
+<section id="priorities" class="priorities">
+    <h2>Our <span style="color: #28a745;">Priorities</span></h2>
+    <p>Swipe left or right to explore each priority and click to learn more.</p>
+  <div class="carousel-container">
+    <div class="priority-carousel">
+        <!-- Priority 1 -->
+        <div class="priority-item" onclick="navigateToPage('priority1.html')">
+            <img src="https://i.postimg.cc/hvjjCbQQ/953545-AE-0-F42-4-CB2-B4-BD-035-D0-AC55-C5-D.jpg" alt="Water Priority">
+            <div class="priority-content">
+                <h3>Water</h3>
+            </div>
+        </div>
+        <!-- Priority 2 -->
+        <div class="priority-item" onclick="navigateToPage('priority2.html')">
+            <img src="https://i.postimg.cc/q7Xwdnjv/EAD4-A1-BC-18-DC-4-F29-A842-605905004-C37.jpg" alt="Health Priority">
+            <div class="priority-content">
+                <h3>Health</h3>
+            </div>
+        </div>
+        <!-- Priority 3 -->
+        <div class="priority-item" onclick="navigateToPage('priority3.html')">
+            <img src="https://i.postimg.cc/T2ZtgRLG/FA42-DD81-85-DD-477-D-A360-7-E238-C89127-E.jpg" alt="Education Priority">
+            <div class="priority-content">
+                <h3>Education</h3>
+            </div>
+        </div>
+        <!-- Priority 4 -->
+        <div class="priority-item" onclick="navigateToPage('priority4.html')">
+            <img src="https://i.postimg.cc/L4ftdj5K/45547-A6-C-E328-474-E-8595-63838283823-E.jpg" alt="Sustainability Priority">
+            <div class="priority-content">
+                <h3>Sustainability</h3>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation Buttons -->
+   <button class="carousel-nav left" onclick="scrollLeft()">←</button>   
+    <button class="carousel-nav right" onclick="scrollRight()">→</button>
+</section>
+
+     <!-- Donation Section -->
+<section id="donate" class="donate">
+    <div class="donate-content">
+        <h2>Donate</h2>
+        <p>
+            When you make a gift to AquaPure Solutions, you help ensure clean water for the future. Your contribution transforms lives and communities through sustainable water solutions.
+        </p>
+        <div class="donate-buttons">
+            <a href="donate-now.html" class="donate-now">Donate Now</a>
+            <a href="give-monthly.html" class="give-monthly">Give Monthly</a>
+        </div>
+    </div>
+</section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="impact">
+    <h2>Our Impact: Transforming Lives Through Clean Water</h2>
+    <p>
+        At AquaPure Solutions, our mission is reflected in the lives we’ve touched and the changes we’ve made in communities across the globe.
+        Every drop of water we provide brings hope, progress, and a brighter future.
+    </p>
+
+    <div class="impact-stats">
+        <div class="stat">
+            <h3>15M+</h3>
+            <p>People gained access to clean, safe water through our initiatives in Kenya and beyond.</p>
+        </div>
+        <div class="stat">
+            <h3>40%</h3>
+            <p>Reduction in waterborne diseases like cholera and typhoid in the communities we serve.</p>
+        </div>
+        <div class="stat">
+            <h3>25M Goal</h3>
+            <p>By 2040, we aim to provide clean water to 25 million people worldwide.</p>
+        </div>
+    </div>
+
+    <p>
+       AquaPure Solutions has empowered over 1 million farmers through the introduction of new irrigation systems to improve farm productivity by using less water. The technologies used in designing our systems include drip irrigation, where water is conveyed to the plant's roots for minimum wastage and to increase crop yield. This involves a rainwater harvesting system for farms using rainwater collection and storage systems for farms when rainwater is unavailable, hence making it a sure source of water. Put together with solar-powered water pumps, all these technologies cater to superior means of irrigation for farmers with no high-cost or hazardous fuel supply. These have gone a long way in securing the food supply and further created a number of jobs within the areas of water management, engineering, and even local distribution, as communities come together to maintain and expand such systems.
+
+    </p>
+
+    <p>
+      Aquapure is known to lower carbon emissions with the utilization of solar-powered desalination systems. These are capable of transforming sea water into drinkable water without the use of fossil fuels. Our rainwater harvesting systems also reduce the need to transport fresh water, moved from other areas in an eco-friendly manner. These technologies, when appeared, made not so many people want to use single-way plastic bottles anymore, as it became quite easy to get clean drinking water. It would prevent plastic waste from contaminating the ecosystems, contributing to a healthy environment. 
+    </p>
+
+    <h3>Community Empowerment</h3>
+    <p>
+       We have also trained various leaders so far in managing water, especially operation and maintenance of the water systems. These leaders ensure that water is well shared out among members within their jurisdiction and also that the systems were in good working order. We have trained over 50,000 people so far in simple ways of keeping water clean through its storage, treatment, and saving of clean water. This helps people understand simple rules that encourage them to manage their own water resources, leading to self-sufficiency and sustainability by teaching communities about leadership.
+
+    <h3>Our Mission</h3>
+    <p>
+       By 2030, AquaPure Solutions is dedicated to reducing waterborne disease by an extra 30 % through the effectuation of advanced water purgation technologies and widespread educational initiative. We calculate to extend our grasp to underserved neighborhood across Africa, Asia, and South America, guarantee that even the virtually vulnerable communities gain admittance to safe and clean pee. Through strategical partnerships with global organization, we will scale our innovational solutions, such as solar - power desalinization and rainwater harvesting systems, to inflate our impact and take light weewee to million more than around the world.
+
+    </p>
+
+    <div class="cta">
+        <p>Be part of the journey to transform lives with clean water. Join us in making a lasting difference.</p>
+        <a href="#support" class="cta-button">Support Our Mission</a>
+    </div>
+</section>
+
+<div class="page-divider"></div>
+
+<section id="about-us" style="background-color: black; color: white; padding: 50px 20px; text-align: center;">
+    <h2 style="color: aqua;">About Us</h2>
+    <p>
+        At AquaPure Solutions, we are dedicated to creating sustainable clean water solutions for communities in need.
+        Our mission is to make clean water accessible, improve health, and empower communities through innovation,
+        education, and long-term partnerships. Join us as we make a difference, one drop at a time.
+    </p>
+</section>
+
+<div class="page-divider"></div>
+
+    <!-- Shareholders Section -->
+<section id="shareholders" class="shareholders">
+    <h2>Parntership Network</h2>
+    <div>
+        <p>Kenyan Government</p>
+        <p>Canadian Government</p>
+        <p>Water.org</p>
+        <p>UNICEF</p>
+        <p>Solar Water Solutions</p>
+        <p>Nestlé</p>
+        <p>Bill & Melinda Gates Foundation</p>
+        <p>Rotary International</p>
+        <p>African Development Bank</p>
+        <p>World Bank</p>
+        <p>Local Entrepreneurs</p>
+    </div>
+</section>
+
+    <div class="page-divider"></div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+        <p>Email: info@aquapuresolutions.com | Phone: <a href="tel:+14165551234">+1 (416) 555-1234</a></p>
+   
+    </section>
+
+<body>
+    <!-- Your content here -->
+    
+   <!-- JavaScript Section -->
+<script>
+  // JavaScript for "Our Priorities" carousel
+
+// Selectors for the left button and carousel
+const leftButton = document.querySelector('.carousel-nav.left'); // Left button
+const carouselContainer = document.querySelector('.priority-carousel'); // Carousel container
+const priorityItems = document.querySelectorAll('.priority-item'); // Carousel items
+
+let currentIndex = 0; // Track the active item index
+
+// Calculate the width of a single priority item, including gaps
+function calculateItemWidth() {
+    const itemStyle = getComputedStyle(priorityItems[0]); // Get styles of the first item
+    const itemWidth = priorityItems[0].offsetWidth; // Actual width of the item
+    const gap = parseInt(itemStyle.marginRight); // Right margin as gap
+    return itemWidth + gap; // Total width (item + gap)
+}
+
+// Update the carousel position
+function updateCarouselPosition() {
+    const itemWidth = calculateItemWidth();
+    carouselContainer.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+}
+
+// Scroll left functionality
+leftButton.addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex--; // Move to the previous item
+        updateCarouselPosition(); // Update carousel position
+    } else {
+        console.log('Already at the start of the carousel!');
+    }
+});
+
+// Navigate to specific pages (optional for clickable items)
+function navigateToPage(url) {
+    if (typeof url === 'string' && url.trim() !== '') {
+        window.location.href = url; // Redirect to the provided URL
+    } else {
+        console.error('Invalid URL provided');
+    }
+}
+
+// Attach click event to each priority item for navigation
+priorityItems.forEach((item, index) => {
+    const pages = ['priority1.html', 'priority2.html', 'priority3.html', 'priority4.html'];
+    item.addEventListener('click', () => navigateToPage(pages[index]));
+}); 
+function scrollRight() {
+    const carousel = document.querySelector('.priority-carousel');
+    if (carousel) {
+        // Log current scroll position
+        console.log("Before Scroll Right:", carousel.scrollLeft);
+        
+        // Scroll right by 300px
+        carousel.scrollBy({ left: 300, behavior: 'smooth' });
+        
+        // Log new scroll position
+        console.log("After Scroll Right:", carousel.scrollLeft);
+    } else {
+        console.error("Carousel element not found");
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,542 @@
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+/* Navigation Bar Styling */
+.nav {
+    display: flex;
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Vertically align items */
+    padding: 10px 20px; /* Padding inside the nav bar */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    color: white; /* Default text color */
+    border-bottom: 1px solid white; /* Optional: White border at the bottom */
+    position: fixed; /* Make the nav bar fixed at the top */
+    width: 100%; /* Full width */
+    top: 0; /* Align it to the top of the page */
+    z-index: 1000; /* Ensure it stays above other elements */
+    backdrop-filter: blur(10px); /* Add a slight blur effect */
+    transition: background-color 0.3s ease; /* Smooth transition for scroll effect */
+}
+
+/* Logo and Website Name */
+.logo {
+    display: flex;
+    align-items: center; /* Center logo and text vertically */
+}
+
+.logo img {
+    height: 40px; /* Adjust logo size */
+    width: auto;
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.website-name {
+    font-size: 20px; /* Font size for the website name */
+    font-weight: bold; /* Make the text bold */
+    color: aqua; /* Aqua color for the website name */
+}
+
+/* Navigation Links */
+..nav-links {
+    display: flex;
+    gap: 15px; /* Adjust spacing between links */
+    justify-content: flex-end; /* Align links to the right */
+}
+
+.nav-links a {
+    color: white; /* Ensure text is white */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Adjust font size */
+    padding: 5px 10px; /* Add spacing around links */
+}
+
+.nav-links a:last-child {
+    margin-right: 20px; /* Adjusts the right margin of the last link (Contact Us) */
+}
+
+.nav-links a:hover {
+    color: aqua; /* Aqua color on hover */
+}
+
+/* Add Spacing Below Fixed Nav Bar */
+body {
+    padding-top: 40px; /* Adjust for fixed nav bar height */
+}
+
+.homepage {
+    background: url('https://i.imgur.com/VtfU6j1.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.homepage h1 {
+    font-size: 3rem;
+    color: aqua;
+    text-transform: uppercase;
+}
+
+.homepage p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.button {
+    border: 1px solid white;
+    padding: 10px 20px;
+    color: white;
+    background: transparent;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.page-divider {
+    height: 1px; /* Thickness of the divider */
+    background: white; /* Color of the divider */
+}
+
+/* Our Priorities Section Styling */
+.priorities {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: black; /* Set background to black */
+    color: white; /* Text color to white for contrast */
+    position: relative;
+}
+
+.priorities h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #28a745;
+}
+
+.priorities p {
+    color: #aaa; /* Lighter gray for paragraph text */
+    margin-bottom: 20px;
+}
+
+/* Carousel Container */
+.priority-carousel {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 20px;
+    padding: 10px;
+    scroll-snap-type: x mandatory; /* Enables smooth snapping */
+    scrollbar-width: none; /* Hides scrollbar */
+    cursor: grab; /* Cursor indicates swiping */
+}
+
+.priority-carousel::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in WebKit browsers */
+}
+
+/* Priority Item Styling */
+.priority-item {
+    flex: 0 0 80%; /* Box size: 80% of the screen width */
+    max-width: 400px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    scroll-snap-align: center; /* Centers each box */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds shadow */
+    cursor: pointer;
+}
+
+.priority-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 5px solid black; /* Changes the line below the image to black */
+}
+
+.priority-content {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5); /* Slight overlay */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Navigation Buttons */
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 1.5rem;
+}
+
+.carousel-nav.left {
+    left: 10px;
+}
+.carousel-nav.right {
+    right: 10px;
+}
+   
+.carousel-nav:hover {
+    background-color: #00bcd4; /* Darker aqua on hover */
+}
+
+/* Donate Section */
+.donate {
+    background: url('https://i.postimg.cc/8PSFCYnn/8033-CF96-08-D5-44-E6-B8-C6-CFA87189-EB0-E.jpg') no-repeat center center/cover; /* Replace with the correct image path */
+    color: white;
+    text-align: center;
+    padding: 80px 20px; /* Adjust padding as needed */
+    position: relative;
+    height: 400px; /* Set the height explicitly */
+}
+
+.donate::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Adds overlay */
+    z-index: 1;
+}
+
+.donate-content {
+    position: relative;
+    z-index: 2;
+}
+
+.donate h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: aqua;
+}
+
+.donate p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    line-height: 1.8;
+}
+
+.donate-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.donate-buttons a {
+    background-color: aqua;
+    color: black;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.donate-buttons a:hover {
+    background-color: #00bcd4;
+}
+
+/* Donation Form Styling */
+
+/* Full Page Black Background for Donation Page */
+body.donation-page {
+    background-color: black; /* Black background */
+    color: white; /* White text for contrast */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Clean, readable font */
+}
+
+/* Donation Form Section */
+.donation-form-section {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Donation Form Styling */
+.donation-form {
+    max-width: 400px; /* Limit form width */
+    margin: 20px auto; /* Center form horizontally */
+    background-color: #1a1a1a; /* Dark gray background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    color: white; /* White text inside the form */
+}
+
+.donation-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.donation-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #444; /* Slightly lighter gray */
+    color: white;
+}
+
+/* Buttons Styling */
+.submit-button {
+    width: 100%;
+    background-color: aqua;
+    color: black;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px; /* Space between Donate and Back buttons */
+}
+
+.submit-button:hover {
+    background-color: #00bcd4;
+}
+
+.back-button {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: black;
+    color: aqua;
+    text-decoration: none;
+    font-size: 1rem;
+    border: 2px solid aqua;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: aqua;
+    color: black;
+}
+
+/* Our Impact Section */
+.impact {
+    background-color: black;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.impact h2 {
+    color: aqua;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.impact p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+.impact-stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.stat {
+    background-color:  #1a1a1a;
+    color:white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.stat h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: aqua;
+}
+
+.stat p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.cta {
+    margin-top: 40px;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: black;
+    background-color: aqua;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #00bcd4;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* About Us Section */
+#about-us {
+    background-color: black;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about-us h2 {
+    color: aqua;
+}
+
+.about-us-button {
+    color: aqua;
+    border: 1px solid aqua;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Optional: Add hover effect for button */
+.about-us-button:hover {
+    background-color: aqua;
+    color: black;
+    transition: 0.3s ease;
+}
+/* Center the About Us Button */
+.about-us-button {
+    color: aqua;
+    border: 1px solid white;
+    padding: 10px 15px; /* Adjust button size */
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 5px;
+    display: inline-block;
+
+    /* Centering styles */
+    margin: 0 auto; /* Horizontally center */
+    position: relative; /* Needed for some centering cases */
+}
+
+.shareholders {
+    background: black; /* Adjust background if needed */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.shareholders h2 {
+    font-size: 2rem;
+    color: aqua;
+}
+.contact {
+    background: black;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+ /* Adding contact form styles */
+
+.contact {
+    background: black;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    color: aqua;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.contact form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact form input, .contact form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact form button {
+    background-color: darkblue;
+    color: white;
+    border: 1px white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: darkaqua;
+}
+
+.contact p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.contact p a {
+    color: aqua;
+    text-decoration: none;
+}
