@@ -341,6 +341,39 @@ body.donation-page {
     color: black;
 }
 
+/* Black Background for the Entire Page */
+body {
+    background-color: black;
+    color: white; /* Ensure text is visible on black background */
+    font-family: Arial, sans-serif;
+}
+
+/* Center the Button Section */
+#ken-carson-tour-button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Aqua Button Styling */
+.tour-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: aqua; /* Aqua color for the button */
+    color: black; /* Text color on the button */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.tour-button:hover {
+    background-color: #00ced1; /* Slightly darker aqua */
+    color: white; /* Text turns white on hover */
+}
+
+
 /* Our Impact Section */
 .impact {
     background-color: black;
